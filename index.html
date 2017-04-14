@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+	<title>Gift Shop</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="main_wrapper">
+		
+		<header>
+			<a class="logo">
+				<img src="images/logo.png" alt="Logo" />
+			</a>
+			<h1>חנות המתנות</h1>
+			<button id="start">התחל</button>
+			<nav>
+				<ul>
+					<li><a data-step="1">מבוא</a></li>
+					<li><a data-step="2">איך לבחור מתנה</a></li>
+					<li><a data-step="3">סיכום</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="step" id="introduction" data-step="1">
+			<h2 class="title">מבוא</h2>
+			<p class="desc">
+				ברוכים הבאים לחנות המתנות<br/>
+				כאן תלמד כיצד לקנות מתנות שוות
+			</p>
+		</section>
+
+		<section class="step" id="gift_selection" data-step="2">
+			<h2 class="title">איך לבחור מתנה?</h2>
+			<p class="desc">בחר מתנה שעולה הרבה כסף!</p>
+		</section>
+
+		<div class="gifts_wrapper">
+			<ul id="gifts">
+				<li id="gift_1">
+					<figure>
+						<img src="images/charger.png" alt="1">
+						<figcaption>מטען נייח - 100 ש״ח</figcaption>
+					</figure>
+				</li>
+				<li id="gift_2">
+					<figure>
+						<img src="images/headphones.png" alt="">
+						<figcaption>אוזניות אלחוטיות - 200 ש״ח</figcaption>
+					</figure>
+				</li>
+				<li id="gift_3">
+					<figure>
+						<img src="images/speaker.png" alt="1">
+						<figcaption>רמקול נייד - 300 ש״ח</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>	
+
+		<section class="step" id="summary" data-step="3">
+			<h2 class="title">סיכום</h2>
+			<p class="desc">
+				תודה שהשתתפת בחנות המתנות!<br/>
+				עכשיו אתה מוכן לקנות מתות שוות
+			</p>
+		</section>
+
+		<footer>
+			<div class="pages">
+				<button id="prev">הקודם</button>
+				<span>0</span>
+				<button id="next">הבא</button>
+			</div>			
+		</footer>
+	</div>
+</body>
+</html>

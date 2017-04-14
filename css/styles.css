@@ -1,0 +1,219 @@
+/* Reset */
+body, div, ul, li, img, p, figure, button{
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	font-family: tahoma;
+}
+
+a{
+	display: block
+}
+
+ul{
+	list-style: none;
+}
+
+*:focus{
+	outline: none;
+}
+
+/* Layout and default settings */
+
+body{
+	background: url('../images/background.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	font-size: 14px;
+	position: relative;
+}
+
+.main_wrapper{
+	width: 100%;
+	max-width: 1024px;
+	height: 768px;
+	margin: auto;
+	background: rgba(255,255,255, 0.85);
+	position: relative;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+header, section{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+nav{
+	clear: both;
+	padding: 0 15px;
+}
+
+section{
+	display: none;
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+}
+
+footer{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+nav, section, footer{
+	opacity: 0;
+}
+
+h2{
+	font-size: 36px;
+}
+
+p{
+	font-size: 24px;
+	line-height: 2;
+}
+
+img{
+	max-width: 100%;
+}
+
+button{
+	border: none;
+	padding: 10px;
+	background: #FF69B4;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	border: none;
+	font-size: 24px;
+	width: 200px;
+	cursor: pointer;
+}
+
+button:hover{
+	background: #E6509B;
+}
+
+button:disabled{
+	background: #999;
+	cursor: not-allowed;
+}
+
+/* Design */
+
+header{
+	text-align: center;
+}
+
+header.top{
+	top:0;
+	right:0;
+	transform: translate(0);
+	width: 100%;
+	text-align: inherit;
+}
+
+header.top .logo{
+	float: left;
+	padding-left: 15px;
+}
+
+header.top h1{
+	float: right;
+	padding-right: 15px;
+}
+
+nav ul{
+	padding: 5px 0;
+	display: flex;
+}
+
+nav li{
+	display: flex;
+}
+
+nav li:before{
+ 	padding: 0 10px;
+    color: #999;
+    content: "\00ab"; 
+    direction: ltr;
+    font-size: 18px;
+}
+
+nav li:first-of-type:before{
+	display: none;
+}
+
+nav li a{
+	color: #999;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav li a.active{
+	color: rgb(255,105,180);
+}
+
+.gifts_wrapper{
+    position: absolute;
+    top: 45%;
+    width: 90%;
+    margin: 0 5%;
+    opacity: 0;
+	display: none;
+}
+
+ul#gifts{
+	display: table;
+	margin: 0 -15px;
+}
+
+#gifts li{
+	display: table-cell;
+	width: calc(100% / 3);
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+#gifts figure{
+	position: relative;
+	border: 2px solid transparent;	
+}
+
+#gifts figcaption{
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	height: 0;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgba(70,130,180,0.5);
+	text-shadow: 1px 1px #000;
+
+	transition: .5s ease;
+}
+
+#gifts figure:hover figcaption{
+	height: 20%;
+}
+
+footer .pages span{
+	width: 200px;
+	display: inline-block;
+}
